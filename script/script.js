@@ -31,7 +31,7 @@ btnRollDice.addEventListener("click", () => {
     console.log(j)
     i = i + j
     console.log(i)
-    player1CurrentScore.innerHTML = `<p>${i}</p>`;
+    player1CurrentScore.innerHTML = `<p class="smallTitle">Current Score</p><p>${i}</p>`;
         if (i >= 21) {
             player1.innerHTML = `<p>Winner!!!</p>`;
             btnRollDice.style.visibility = "hidden";

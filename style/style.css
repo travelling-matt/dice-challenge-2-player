@@ -20,7 +20,7 @@
 
 #backgroundLeft {
     grid-area: 1 / 1 / 6 / 4;
-    background: pink;
+    background: #f2b5d4;
     width: 100%;
     height: 100%;
     /*padding-right: 1em;*/
@@ -28,7 +28,7 @@
 
 #backgroundRight {
     grid-area: 1 / 4 / 6 / 7;
-    background: lightblue;
+    background: #7bdff2;
     width: 100%;
     height: 100%;
     /*padding-left: 1em;*/
@@ -36,7 +36,7 @@
 
 #player1 {
     grid-area: 1 / 2 / 1 / 2;
-    background: red;
+    background: #f7d6e0;
     width: 60%;
     font-size: 3em;
     text-align: center;
@@ -48,7 +48,7 @@
 
 #player2 {
     grid-area: 1 / 5 / 1 / 5;
-    background: blue;
+    background: #b2f7ef;
     width: 60%;
     font-size: 3em;
     text-align: center;
@@ -60,7 +60,7 @@
 
 #btnNewGame {
     grid-area: 2 / 3 / 2 / 5;
-    background: chartreuse;
+    background: #eff7f6;
     width: 100%;
     font-size: 1.2em;
     text-align: center;
@@ -72,7 +72,7 @@
 
 #player1HoldScore {
     grid-area: 3 / 2 / 3 / 2;
-    background: red;
+    background: #f7d6e0;
     width: 50%;
     font-size: 5em;
     text-align: center;
@@ -84,7 +84,7 @@
 
 #player2HoldScore {
     grid-area: 3 / 5 / 3 / 5;
-    background: blue;
+    background: #b2f7ef;
     width: 50%;
     font-size: 5em;
     text-align: center;
@@ -109,7 +109,7 @@
 
 #player1CurrentScore {
     grid-area: 4 / 2 / 6 / 2;
-    background: red;
+    background: #f7d6e0;
     width: 50%;
     font-size: 5em;
     text-align: center;
@@ -121,7 +121,7 @@
 
 #player2CurrentScore {
     grid-area: 4 / 5 / 6 / 5;
-    background: blue;
+    background: #b2f7ef;
     width: 50%;
     font-size: 5em;
     text-align: center;
@@ -138,7 +138,7 @@
 
 #btnRollDice {
     grid-area: 4 / 3 / 4 / 5;
-    background: chartreuse;
+    background: #eff7f6;
     width: 100%;
     font-size: 1.2em;
     text-align: center;
@@ -151,7 +151,7 @@
 
 #btnHold {
     grid-area: 5 / 3 / 5 / 5;
-    background: chartreuse;
+    background: #eff7f6;
     width: 100%;
     font-size: 1.2em;
     text-align: center;
