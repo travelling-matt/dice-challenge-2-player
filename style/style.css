@@ -58,7 +58,7 @@
     padding: .75em 1em;
 }
 
-#newGame {
+#btnNewGame {
     grid-area: 2 / 3 / 2 / 5;
     background: chartreuse;
     width: 100%;
@@ -101,6 +101,7 @@
     width:50%;
     justify-self: center;
     align-self: center;
+    text-align: center;
     border-style: solid;
     border-radius: 50%;
     padding: .75em 1em;
@@ -135,7 +136,7 @@
 }
 
 
-#rollDice {
+#btnRollDice {
     grid-area: 4 / 3 / 4 / 5;
     background: chartreuse;
     width: 100%;
@@ -148,7 +149,7 @@
     margin-top: 3em;
 }
 
-#hold {
+#btnHold {
     grid-area: 5 / 3 / 5 / 5;
     background: chartreuse;
     width: 100%;
@@ -163,9 +164,14 @@
 
 img {
     display: none;
+    padding: 3em;
 }
 
-/*#resetBtn {
+
+
+/*
+previous btn code saved for drop shadow
+#resetBtn {
     min-width: 100px;
     padding: 21px 17px;
     border-width:1px;
