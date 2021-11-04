@@ -2,86 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Dice Game 1 Player</title>
+    <title>Dice Game 2 Player</title>
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     
         <div class="gridItems">
-            <div class="gridItem">1</div>
-            <div class="gridItem">2</div>
-            <div class="gridItem">3</div>
-            <div class="gridItem">4</div>
-            <div class="gridItem">5</div>
-            <div class="gridItem">6</div>
-            <div class="gridItem">7</div>
-            <div class="gridItem">8</div>
-            <div class="gridItem">9</div>
-            <div class="gridItem">10</div>
-            <div class="gridItem">11</div>
-            <div class="gridItem">12</div>
-            <div class="gridItem">13</div>
-            <div class="gridItem">14</div>
-            <div class="gridItem">15</div>
-            <div class="gridItem">16</div>
-            <div class="gridItem">17</div>
-            <div class="gridItem">18</div>
-            <div class="gridItem">19</div>
-            <div class="gridItem">20</div>
-            <div class="gridItem">21</div>
-            <div class="gridItem">22</div>
-            <div class="gridItem">23</div>
-            <div class="gridItem">24</div>
-        </div>
-        
-    <div id="wrapper">    
-        
-        
-        
-        
-        
-        <div id="r1">
-            <div id="player1"></div>
-            <div id="player2"></div>
-        </div>
-        <div id="r2">
-            <div id="r2c1"></div>
-        </div>
-        <div id="r3">
-            <div id="r3c1"></div>
-            <div id="r3c2"></div>
-            <div id="r3c3"></div>
-        </div>
-        <div id="r4">
-            <div id="r4c1"></div>
-            <div id="r4c2">
-                <div id="r5c1">
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
-            <div id="r4c3"></div>
-        </div>
-
-
-        <div id="innerWrapper">
-            <div id="player1">
-                <p>Player 1</p>
-            </div>
-            <div id="score">
-                <p>0</p>
-            </div>
-            <div id="dice">
+            <div class="gridItem" id="backgroundLeft"></div>
+            <div class="gridItem" id="player1"><p>Player 1</p></div>
+            <div class="gridItem" id="backgroundRight"></div>
+            <div class="gridItem" id="player2"><p>Player 2</p></div>
+            <div class="gridItem" id="newGame"><p>New Game</p></div>
+            <div class="gridItem" id="player1HoldScore"></div>
+            <div class="gridItem" id="dice">
                 <p><img id="one" src="./images/1.png"></img><img id="two" src="./images/2.png"></img><img id="three" src="./images/3.png"></img><img id="four" src="./images/4.png"></img><img id="five" src="./images/5.png"></img><img id="six" src="./images/6.png"></img><img id="winner" src="./images/winner.gif"></img><img id="arrow" src="./images/arrow.gif"></img>
                 </p>
             </div>
-            <div id="rollBtn">
-                <p>Roll</p>
+            <div class="gridItem" id="player2HoldScore"></div>
+            <div class="gridItem" id="player1CurrentScore">
+                <p class="smallTitle">Current Score</p><p>0</p>
             </div>
-            <div id="resetBtn">
-                <p>Start again</p>
+            <div class="gridItem" id="player2CurrentScore">
+                <p class="smallTitle">Current Score</p><p>0</p>
+            </div>
+            <div class="gridItem" id="rollDice"><p>Roll Dice</p></div>
+            <div class="gridItem" id="hold"><p>Hold</p></div>
         </div>
-    </div>
+
     <script src="script/script.js"></script>
 </body>
 </html>
