@@ -1,6 +1,3 @@
-/*let btnNewGame = document.getElementById("btnNewGame");
-let btnRollDice = document.getElementById("btnRollDice");
-let btnHold = document.getElementById("btnHold");*/
 let dice = document.getElementById("dice");
 let player1CurrentScore = document.getElementById("player1CurrentScore");
 let player2CurrentScore = document.getElementById("player2CurrentScore");
