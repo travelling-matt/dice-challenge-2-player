@@ -24,7 +24,7 @@ let k = 0
             if (i >= 21) {
                 player1.innerHTML = `<p>Winner!!!</p>`;
                 player2.innerHTML = `<p>Loser :(</p>`;
-                dice.innerHTML = `<p>Player 1<br><img src="./images/winner.gif"></p>`;
+                dice.innerHTML = `<p>Player 1<br><img src="./images/winnerPlayer1.gif"></p>`;
                 btnPlayer1RollDice.style.display = "none";
                 btnPlayer1Hold.style.display = "none";
             } else if (j == 1) {
@@ -68,7 +68,7 @@ let k = 0
             if (k >= 21) {
                 player2.innerHTML = `<p>Winner!!!</p>`;
                 player1.innerHTML = `<p>Loser :(</p>`;
-                dice.innerHTML = `<p>Player 2<br><img src="./images/winner.gif"></p>`;
+                dice.innerHTML = `<p>Player 2<br><img src="./images/winnerPlayer2.gif"></p>`;
                 btnPlayer2RollDice.style.display = "none";
                 btnPlayer2Hold.style.display = "none";
             } else if (l == 1) {
@@ -101,11 +101,11 @@ let k = 0
         if (k > i) {
             player2.innerHTML = `<p>Winner!!!</p>`;
             player1.innerHTML = `<p>Loser :(</p>`;
-            dice.innerHTML = `<p>Player 2<br><img src="./images/winner.gif"></p>`;
+            dice.innerHTML = `<p>Player 2<br><img src="./images/winnerPlayer2.gif"></p>`;
         } else if (k < i)  {
             player1.innerHTML = `<p>Winner!!!</p>`;
             player2.innerHTML = `<p>Loser :(</p>`;
-            dice.innerHTML = `<p>Player 1<br><img src="./images/winner.gif"></p>`;
+            dice.innerHTML = `<p>Player 1<br><img src="./images/winnerPlayer1.gif"></p>`;
         } else if (k == i) {
             player2.innerHTML = `<p>Tie</p>`;
             player1.innerHTML = `<p>Tie</p>`;
