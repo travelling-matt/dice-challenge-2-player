@@ -135,7 +135,6 @@
     font-size: .3em;
 }
 
-
 #btnRollDice {
     grid-area: 4 / 3 / 4 / 5;
     background: #eff7f6;
@@ -146,7 +145,7 @@
     border-style: solid;
     border-radius: .8em;
     padding: 1em;
-    margin-top: 3em;
+    margin-top: 4em;
 }
 
 #btnHold {
@@ -163,7 +162,6 @@
 }
 
 img {
-    display: none;
     padding: 3em;
 }
 

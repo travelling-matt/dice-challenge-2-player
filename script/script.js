@@ -6,58 +6,82 @@ let player1CurrentScore = document.getElementById("player1CurrentScore");
 let player2CurrentScore = document.getElementById("player2CurrentScore");
 let player1HoldScore = document.getElementById("player1HoldScore");
 let player2HoldScore = document.getElementById("player2HoldScore");
-let one = document.getElementById("one");
-let two = document.getElementById("two");
-let three = document.getElementById("three");
-let four = document.getElementById("four");
-let five = document.getElementById("five");
-let six = document.getElementById("six");
 /*i = player1 current score*/
 let i = 0
 /*j = dice roll*/
 /*k = player2 current score*/
+let k = 0
 
 
-
-btnRollDice.addEventListener("click", () => {
-    one.style.display = "none";
-    two.style.display = "none";
-    three.style.display = "none";
-    four.style.display = "none";
-    five.style.display = "none";
-    six.style.display = "none";
-    arrow.style.display = "none";
-    let j = Math.ceil(Math.random()*6);
-    console.log(j)
-    i = i + j
-    console.log(i)
-    player1CurrentScore.innerHTML = `<p class="smallTitle">Current Score</p><p>${i}</p>`;
-        if (i >= 21) {
-            player1.innerHTML = `<p>Winner!!!</p>`;
-            btnRollDice.style.visibility = "hidden";
-            btnNewGame.style.display = "block";
-            winner.style.display = "block"; 
-            i = 0
-        } else if (j == 1) {
-            player1.innerHTML = `<p>Loser :(</p>`;
-            one.style.display = "block";
-            btnRollDice.style.display = "none";
-            btnNewGame.style.display = "block";
-            /*loser.style.display = "block"; */
-            i = 0
-        } else if (j == 2) {      
-            two.style.display = "block";  
-        } else if (j == 3) {      
-            three.style.display = "block";  
-        } else if (j == 4) {      
-            four.style.display = "block";  
-        } else if (j == 5) {      
-            five.style.display = "block";  
-        } else if (j == 6) {      
-            six.style.display = "block";  
+    /*player1*/
+    btnRollDice.addEventListener("click", () => {
+        let j = Math.ceil(Math.random()*6);
+        console.log(j)
+        i = i + j
+        console.log(i)
+        player1CurrentScore.innerHTML = `<p class="smallTitle">Current Score</p><p>${i}</p>`;
+            if (i >= 21) {
+                player1.innerHTML = `<p>Winner!!!</p>`;
+                player2.innerHTML = `<p>Loser :(</p>`;
+                btnRollDice.style.visibility = "hidden";
+                btnNewGame.style.display = "block";
+                dice.innerHTML = `<p><img src="./images/winner.gif"></p>`; 
+                i = 0
+            } else if (j == 1) {
+                player1.innerHTML = `<p>Loser :(</p>`;
+                player2.innerHTML = `<p>Winner!!!</p>`;
+                dice.innerHTML = `<p><img src="./images/1.png"></p>`;
+                btnRollDice.style.display = "none";
+                btnNewGame.style.display = "block";
+                i = 0
+            } else if (j == 2) {      
+                dice.innerHTML = `<p><img src="./images/2.png"></p>`;
+            } else if (j == 3) {      
+                dice.innerHTML = `<p><img src="./images/3.png"></p>`;  
+            } else if (j == 4) {      
+                dice.innerHTML = `<p><img src="./images/4.png"></p>`; 
+            } else if (j == 5) {      
+                dice.innerHTML = `<p><img src="./images/5.png"></p>`; 
+            } else if (j == 6) {      
+                dice.innerHTML = `<p><img src="./images/6.png"></p>`; 
+            }
         }
-    }
-)
+    )
+
+    /*player2*/
+    btnRollDice.addEventListener("click", () => {
+        let j = Math.ceil(Math.random()*6);
+        console.log(j)
+        k = k + j
+        console.log(i)
+        player2CurrentScore.innerHTML = `<p class="smallTitle">Current Score</p><p>${i}</p>`;
+            if (i >= 21) {
+                player2.innerHTML = `<p>Winner!!!</p>`;
+                player1.innerHTML = `<p>Loser :(</p>`;
+                btnRollDice.style.visibility = "hidden";
+                btnNewGame.style.display = "block";
+                dice.innerHTML = `<p><img src="./images/winner.gif"></p>`; 
+                i = 0
+            } else if (j == 1) {
+                player2.innerHTML = `<p>Loser :(</p>`;
+                player1.innerHTML = `<p>Winner!!!</p>`;
+                dice.innerHTML = `<p><img src="./images/1.png"></p>`;
+                btnRollDice.style.display = "none";
+                btnNewGame.style.display = "block";
+                i = 0
+            } else if (j == 2) {      
+                dice.innerHTML = `<p><img src="./images/2.png"></p>`;
+            } else if (j == 3) {      
+                dice.innerHTML = `<p><img src="./images/3.png"></p>`;  
+            } else if (j == 4) {      
+                dice.innerHTML = `<p><img src="./images/4.png"></p>`; 
+            } else if (j == 5) {      
+                dice.innerHTML = `<p><img src="./images/5.png"></p>`; 
+            } else if (j == 6) {      
+                dice.innerHTML = `<p><img src="./images/6.png"></p>`; 
+            }
+        }
+    )
 
 btnNewGame.addEventListener("click", () => {
     location.reload();    
